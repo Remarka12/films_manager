@@ -23,7 +23,7 @@ public class AfishaManagerTest {
     @Test
     public void findLastFilm() {
 
-        AfishaManager manager = new AfishaManager();
+        AfishaManager manager = new AfishaManager(3);
         manager.addFilm("Баладшот");
         manager.addFilm("Вперед");
         manager.addFilm("Отель Белград");
@@ -39,7 +39,7 @@ public class AfishaManagerTest {
 
     public void findLastIfMoreTen() {
 
-        AfishaManager manager = new AfishaManager();
+        AfishaManager manager = new AfishaManager(10);
         manager.addFilm("Баладшот");
         manager.addFilm("Вперед");
         manager.addFilm("Отель Белград");
